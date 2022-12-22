@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #70a7c6;
+  --yellow: #eace2c;
+  --gray: #40596b;
+  --darkGray: #3f3f3f;
+  --white: #fdfdfd;
+}
+
+body {
+  font-family: "Signika", sans-serif;
+  font-weight: 300;
+  color: var(--darkGray);
+}
+
+/* ======== Navigation ======== */
+
+#navbar {
+  background-color: var(--gray);
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: center;
+}
+
+#navbar a {
+  color: var(--yellow);
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+  padding: 1.2rem 0.6rem;
+}
+
+/* ======== Header ======== */
+
+#home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--blue);
+  height: 80vh;
+}
+
+#home > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto 0;
+}
+
+h1 {
+  color: var(--darkGray);
+  font-size: 4.6rem;
+  font-weight: 300;
+}
+
+#home > div > p {
+  color: var(--white);
+  font-size: 1.6rem;
+  margin: 2.5rem 6rem;
+  text-align: center;
+  line-height: 2.4rem;
+}
+
+figure {
+  background-color: var(--yellow);
+  border-radius: 50%;
+  width: 360px;
+  height: 360px;
+}
+
+figure img {
+  height: 340px;
+}
+
+.btn__home {
+  background-color: var(--white);
+  margin-top: 1rem;
+  color: var(--darkGray);
+}
+
+/* ======== About ======== */
+
+.section__title {
+  text-align: center;
+  font-size: 2.4rem;
+  padding: 1.6rem 0;
+  margin-top: 0.5rem;
+}
+
+.two__column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  padding: 1rem 0;
+}
+
+.two__column div {
+  width: 80%;
+  text-align: start;
+  margin: 0 auto;
+}
+
+.one__column {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  line-height: 1.7rem;
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* ======== Features ======== */
+
+#features {
+  background-color: #90ddaa;
+}
+
+.features__title {
+  padding: 3rem 0;
+}
+
+.card__img {
+  width: 220px;
+  padding: 3.5rem 0;
+}
+
+.cards__container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+
+.card {
+  text-align: center;
+  background-color: var(--gray);
+  padding: 1rem;
+  margin: 0 1.5rem 1.5rem 1.5rem;
+  flex: 1 1 260px;
+}
+
+.card p {
+  font-size: 1.2rem;
+  background-color: var(--white);
+  padding: 1rem;
+}
+
+#clickinghere {
+  text-decoration: underline;
+}
+
+#clickinghere:hover {
+  cursor: pointer;
+}
+
+.red {
+  color: rgb(224, 8, 8);
+}
+
+/* ======== Add to Slack ======== */
+
+#addtoslack {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.addto__title {
+  margin: 2rem 0;
+}
+
+.addto__p {
+  margin: 0 1rem;
+}
+
+.btn__add {
+  margin: 6.5rem auto;
+  color: var(--white);
+  background-color: var(--gray);
+}
+
+/* ======== Footer ======== */
+
+#footer {
+  background-color: var(--gray);
+  color: var(--white);
+  text-align: center;
+  margin-top: 4rem;
+  padding: 1.2rem 0;
+  font-size: 13px;
+}
+
+#footer p {
+  padding: 0.3rem 0;
+}
+
+#footer p a {
+  color: var(--white);
+}
+
+#footer p a:visited {
+  color: var(--white);
+}
+
+/* ======== General ======== */
+
+.btn {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 1rem 1.6rem;
+  border-radius: 8px;
+}
+
+.btn__img {
+  height: 30px;
+  margin-right: 20px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+#scroll__btn {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  background-color: var(--yellow);
+  text-align: center;
+  border-radius: 6px;
+  opacity: 0.8;
+}
+
+#scroll__btn img {
+  width: 20px;
+  margin-bottom: -8px;
+}
+
+#scroll__btn p {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#scroll__btn:hover {
+  cursor: pointer;
+}
+
+/* ======== Media queries ======== */
+
+@media screen and (max-width: 1024px) {
+  figure {
+    width: 340px;
+    height: 340px;
+  }
+
+  figure img {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  #home {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+
+  #home div > p {
+    margin: 1rem auto;
+  }
+
+  h1 {
+    margin-top: 1rem;
+  }
+
+  figure {
+    width: 300px;
+    height: 300px;
+  }
+
+  figure img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .two__column {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .two__column div {
+    margin: 1rem auto;
+    width: 90%;
+  }
+
+  .one__column {
+    padding-top: 0;
+  }
+}
